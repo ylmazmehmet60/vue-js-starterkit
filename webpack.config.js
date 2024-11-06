@@ -41,6 +41,9 @@ module.exports = {
     extensions: ['.js', '.vue'],  // Ensure it resolves .js and .vue files
   },
   plugins: [
+    new HtmlWebpackPlugin({
+      template: './src/index.html', // Ensure this points to the location of your index.html
+    }),
     new VueLoaderPlugin(),
   ],
   devServer: {

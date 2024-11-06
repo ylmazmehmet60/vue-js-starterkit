@@ -1,10 +1,10 @@
-/*! #__NO_SIDE_EFFECTS__ */
+/*!
+  * vue-router v4.4.5
+  * (c) 2024 Eduardo San Martin Morote
+  * @license MIT
+  */
 
-/**
-* @vue/runtime-core v3.5.12
-* (c) 2018-present Yuxi (Evan) You and Vue contributors
-* @license MIT
-**/
+/*! #__NO_SIDE_EFFECTS__ */
 
 /**
 * @vue/runtime-dom v3.5.12
