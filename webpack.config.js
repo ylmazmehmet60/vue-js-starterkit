@@ -36,14 +36,11 @@ module.exports = {
   },
   resolve: {
     alias: {
-      vue: 'vue/dist/vue.esm-bundler.js',  // Resolving Vue for Webpack
+      '@': path.resolve(__dirname, 'src'),  // This ensures that `@` points to `src/`
     },
-    extensions: ['.js', '.vue'],
+    extensions: ['.js', '.vue'],  // Ensure it resolves .js and .vue files
   },
   plugins: [
-    new HtmlWebpackPlugin({
-      template: './src/index.html', // Path to your HTML template
-    }),
     new VueLoaderPlugin(),
   ],
   devServer: {
@@ -52,5 +49,6 @@ module.exports = {
     },
     hot: true,
     open: true,
+    historyApiFallback: true, // Ensures all routes are redirected to history mode
   },
 };
